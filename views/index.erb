@@ -10,11 +10,10 @@
 <table width=500 cellpadding=0>
 <tr><td bgcolor=#fafaf0>
 
-<!-- fafaf0 -->
 
 <a href="/"><img src="On ramp new text copy (2).jpg"
-<!-- border=0 width=500 height=100></a><br/>
-<table width=100% bgcolor=#ffaa33 cellpadding=0><tr><td></td></tr></table>
+  border=0 width=500 height=100></a>
+<table width=100% bgcolor=#ffaa33 cellpadding=0><td></td></table>
 
 <div style="position: relative; width: 500px; height: 350px;">
     <img id="On-ramp-graph.jpg" height="350" width="500" src="On-ramp graph beginning.jpg" style="position: absolute; top: 0px; left: 0px;" />
@@ -26,7 +25,7 @@
 <table width=100% cellpadding=0 cellspacing=0>
 <tr><td bgcolor=#ddddff>
 <center>
-<strong>10 years later: a new '<a href="http://old.ycombinator.com/sfp.html">Summer Founders Program</a>'</strong>
+<strong>A new '<a href="http://old.ycombinator.com/sfp.html">Summer Founders Program</a>'</strong>
 </center>
 </td></tr></table>
 </td></tr></table> 
@@ -52,7 +51,7 @@ continue to help founders for the life of their company, and beyond.
 <p align=center>
 <span class=foot>
 <a href="purpose.html">Purpose</a> | 
-<a href="mentors.html">Mentors</a> | 
+<a href="mentors">Mentors</a> | 
 <a href="faq.html">FAQ</a> |
 <a href="apply.html">Apply</a>
 <br><br>
@@ -60,32 +59,4 @@ continue to help founders for the life of their company, and beyond.
 </td></tr></table>
 </center>
 
-<!-- slideshow -->
-<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.3.min.js"></script>
-<script type="text/javascript">
-    $(document).ready(function () {
-        var slideImages = [$("#slideshow0"), $("#slideshow1")];
-        var imageIndex = 0;
-        var nextSlide = 2;  //0 and 1 are initial values
-        var slideWrap = 67; // There are 66 slides
-        function advanceSlide() {
-            var oldImage = slideImages[imageIndex];
-            imageIndex = ++imageIndex % slideImages.length;
-            var newImage = slideImages[imageIndex];
-            // Fade old image
-            var closeOver = nextSlide;
-            oldImage.fadeTo(800, 0, function () {
-                $(this).attr("src", "slideshow/" + closeOver + ".jpg");
-            });
-            // Fade in new image
-            newImage.fadeTo(800, 1);
-            // Advance slide
-            nextSlide = ++nextSlide % slideWrap;
-        }
-        window.setInterval(advanceSlide, 8000);
-    });
-</script>
-<!-- <<div style="display: none;">
-  <a href="https://plus.google.com/114748729119233067029" rel="publisher">Google+</a>
-</div>> -->
 </body>
